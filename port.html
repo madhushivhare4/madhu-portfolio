@@ -1,0 +1,390 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Madhu Shivhare | Data Analyst</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Montserrat',sans-serif;
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#111827;
+  color:#f3f4f6;
+}
+
+header{
+  background:#0f172a;
+  padding:20px 0;
+  text-align:center;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+header h1{
+  color:#3b82f6;
+  font-size:28px;
+}
+
+nav{
+  margin-top:10px;
+}
+
+nav a{
+  color:#f3f4f6;
+  text-decoration:none;
+  margin:0 15px;
+  transition:0.3s;
+  font-weight:500;
+}
+
+nav a:hover{
+  color:#3b82f6;
+}
+
+section{
+  padding:70px 10%;
+}
+
+.hero{
+  text-align:center;
+  padding:120px 10%;
+  background:linear-gradient(to right,#0f172a,#1f2937);
+}
+
+.hero h2{
+  font-size:42px;
+  color:#3b82f6;
+}
+
+.hero p{
+  margin:20px 0;
+  font-size:18px;
+}
+
+.btn{
+  padding:12px 25px;
+  background:#3b82f6;
+  color:white;
+  text-decoration:none;
+  border-radius:6px;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#2563eb;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:40px;
+  color:#3b82f6;
+  font-size:28px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:#1f2937;
+  padding:20px;
+  border-radius:10px;
+  text-align:center;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+}
+
+.skills{
+  text-align:center;
+}
+
+.skills span{
+  display:inline-block;
+  background:#374151;
+  padding:8px 12px;
+  margin:5px;
+  border-radius:20px;
+  font-size:14px;
+}
+
+/* Certificates Grid */
+.certificates-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+  justify-items:center;
+}
+
+.certificate{
+  background:#1f2937;
+  padding:15px;
+  border-radius:10px;
+  text-align:center;
+  width:100%;
+  max-width:320px;
+}
+
+.certificate embed, .certificate img{
+  border-radius:8px;
+  width:100%;
+  height:250px;
+  object-fit:cover;
+}
+
+/* Modal */
+.modal{
+  display:none;
+  position:fixed;
+  z-index:2000;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  padding-top:60px;
+}
+
+.modal-content{
+  display:block;
+  margin:auto;
+  width:80%;
+  height:80%;
+}
+
+.modal span{
+  position:absolute;
+  top:20px;
+  right:35px;
+  color:white;
+  font-size:40px;
+  cursor:pointer;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:#0f172a;
+  margin-top:40px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .hero h2{
+    font-size:30px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Hello I'm Madhu Shivhare</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Data Analyst 📊</h2>
+  <p>Transforming Data into Actionable Insights</p>
+  <!-- <a href="#projects" class="btn">View Projects</a> -->
+</section>
+
+
+<section id="profile">
+  <h2 class="section-title">Profile</h2>
+  <div style="text-align:center; max-width:700px; margin:auto;">
+    <img src="myphoto.jpg" 
+         alt="Madhu Shivhare" 
+         style="width:200px; height:200px; border-radius:50%; object-fit:cover; margin-bottom:20px;">
+   
+    <p>
+      📍 Location: Satna, Madhya Pradesh <br>
+      🎓 Education: B.Tech Computer science (Artificial Intelligence & Data Science) from Aks University ,Satna <br>
+      💼 Role: Data Analyst
+    </p>
+  </div>
+</section>
+
+
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <p style="text-align:center; max-width:700px; margin:auto;">
+   I’m an aspiring Data Analyst passionate about turning data into actionable insights. Skilled in Python, SQL, Excel, and Power BI, I enjoy analyzing datasets, creating interactive dashboards, and uncovering trends. Eager to learn and grow, I aim to contribute to data-driven decision-making while continuously expanding my analytical skills.
+  </p>
+</section>
+
+<!-- <section id="skills">
+  <h2 class="section-title">Technical Skills</h2>
+  <div class="skills">
+    <span>Python</span>
+    <span>SQL</span>
+    <span>Power BI</span>
+    <span>Excel</span>
+    <span>Tableau</span>
+    <span>Statistics</span>
+    <span>Data Cleaning</span>
+  </div>
+</section> -->
+
+
+<section id="skills">
+  <h2 class="section-title">Technical Skills</h2>
+  <div class="skills">
+    <span>
+      <img src="image.png" alt="Python" style="width:100px; height:100px; vertical-align:middle; margin-right:5px;">
+      Python
+    </span>
+    <span>
+      <img src="image copy 2.png" alt="SQL" style="width:100px; height:100px; vertical-align:middle; margin-right:5px;">
+      SQL
+    </span>
+    <span>
+      <img src="image copy 4.png" alt="Power BI" style="width: 100px; height: 100px;0px; vertical-align:middle; margin-right:5px;">
+      Power BI
+    </span>
+    <span>
+      <img src="image copy.png" alt="Excel" style="width:100px; height: 100px; vertical-align:middle; margin-right:5px;">
+      Excel
+    </span>
+    <span>
+      <img src="image copy 3.png" alt="Tableau" style="width:100px; height:100px; vertical-align:middle; margin-right:5px;">
+      Tableau
+    </span>
+    
+   
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Sales Dashboard</h3>
+      <p>Built interactive Power BI dashboard to monitor KPIs and revenue trends.</p>
+    </div>
+    <div class="card">
+      <h3>Customer Segmentation</h3>
+      <p>Performed clustering using Python to identify customer behavior patterns.</p>
+    </div>
+  </div>
+</section>
+
+<section id="certificates">
+  <h2 class="section-title">Certificates</h2>
+
+  <div class="certificates-grid">
+
+    <div class="certificate">
+      <img src="microsoft azure cerificate.jpg" 
+           onclick="openModal('microsoft azure cerificate.jpg')" alt="Azure Certificate">
+      <p>Microsoft Azure Certificate</p>
+    </div>
+
+    <div class="certificate">
+      <embed src="mycertificate (1).pdf" type="application/pdf">
+      <p>Certificate 1</p>
+    </div>
+
+    <div class="certificate">
+      <embed src="mycertificate (2).pdf" type="application/pdf">
+      <p>Certificate 2</p>
+    </div>
+
+    <div class="certificate">
+      <embed src="Course_Certificate.pdf" type="application/pdf">
+      <p>Course Certificate</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="resume">
+  <h2 class="section-title">Resume</h2>
+
+  <div style="text-align:center; max-width:800px; margin:auto;">
+    <iframe src="myresume.pdf" 
+            width="100%" 
+            height="500px" 
+            style="border-radius:10px; border:1px solid #374151;">
+    </iframe>
+
+    <br><br>
+
+    <a href="myresume.pdf" download class="btn">
+       ⬇ Download Resume
+    </a>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <p style="text-align:center;">
+    Email: your@email.com <br>
+    LinkedIn: linkedin.com/in/yourprofile <br>
+    GitHub: github.com/yourusername
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 Madhu Shivhare | Data Analyst Portfolio</p>
+</footer>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+  <span onclick="closeModal()">&times;</span>
+  <iframe id="modalFrame" class="modal-content"></iframe>
+</div>
+
+<script>
+function openModal(file){
+  document.getElementById("myModal").style.display="block";
+  document.getElementById("modalFrame").src=file;
+}
+
+function closeModal(){
+  document.getElementById("myModal").style.display="none";
+  document.getElementById("modalFrame").src="";
+}
+
+window.onclick = function(event){
+  const modal = document.getElementById("myModal");
+  if(event.target == modal){
+    closeModal();
+  }
+}
+</script>
+
+</body>
+</html>
